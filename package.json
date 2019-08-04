@@ -1,0 +1,33 @@
+{
+  "name": "links-checker",
+  "version": "1.0.0",
+  "description": "test automation task to check broken links in cypress.io homepage",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rd /s /q allure-results",
+    "links": "node ./node_modules/protractor/bin/webdriver-manager update && node ./node_modules/protractor/bin/protractor conf.js --suite=broken_links",
+    "posttest": "allure generate allure-results --clean -o allure-report || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abidali7/links-checker.git"
+  },
+  "keywords": [
+    "expertlead",
+    "automation",
+    "test"
+  ],
+  "author": "Abid Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abidali7/links-checker/issues"
+  },
+  "homepage": "https://github.com/abidali7/links-checker#readme",
+  "dependencies": {
+    "allure-commandline": "2.9.0",
+    "jasmine-allure-reporter": "1.0.2",
+    "jasmine-spec-reporter": "4.2.1",
+    "protractor": "5.4.2",
+    "sync-request": "^6.1.0"
+  }
+}
