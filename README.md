@@ -1,9 +1,8 @@
 # links-checker
-
-Test automation task to check broken links in cypress.io homepage
+This repository is dedicated to crawl and check if there's any broken link exist at a web page.
+Stack: Protractor, Allure (reporting framework)
 
 ## Getting Started
-
 Follow the below mentioned steps for complete automated solution from setup, execution, reporting etc.
 
 ### Install Nodejs (if it's mot installed yet)
